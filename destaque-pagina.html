@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destaques - Essência Culinária</title>
+    <link rel="stylesheet" href="destaque-pagina.css"> <!-- Certifique-se de criar um CSS para estilização -->
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img src="img/logo.jpg" alt="Logo" class="logo">
+        </a>
+        <h1>Destaques da Semana</h1>
+    </header>
+    <div class="background-overlay"></div>
+    <main>
+        <section class="destaque">
+            <h2>Sobremesa em Destaque:</h2>
+            <div class="destaque-box">
+                <img src="img/sorvete.jpeg" alt="Sobremesa em Destaque">
+                <div class="info">
+                    <h3>Sorvete de Morango Caseiro</h3>
+                    <p>Uma sobremesa deliciosa e refrescante, perfeita para qualquer ocasião!</p>
+                    <a href="sorvete-morango.html" class="botao">Ver Receita</a>
+                </div>
+            </div>
+        </section>
+        
+        <section class="outras-sobremesas">
+            <h2>Outras Sobremesas:</h2>
+            <div class="grid">
+                <div class="box" onclick="location.href='bolo.html'">
+                    <img src="img/bolo de chocolate.jpeg" alt="Bolo de Chocolate">
+                    <h3>Bolo de Chocolate</h3>
+                </div>
+                <div class="box" onclick="location.href='brigadeiro.html'">
+                    <img src="img/brigadeiro.jpeg" alt="Brigadeiro">
+                    <h3>Brigadeiro</h3>
+                </div>
+                <div class="box" onclick="location.href='muffin.html'">
+                    <img src="img/muffin.jpeg" alt="Muffin de Banana">
+                    <h3>Muffin de Banana</h3>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="script.js" defer></script>
+</body>
+</html>

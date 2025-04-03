@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Origem da Receita</title>
+    <link rel="stylesheet" href="mais.css">
+</head>
+<body>
+    <div class="pagina">
+        <!-- Carrossel à esquerda -->
+        <div class="carrossel-container">
+            <div class="carrossel">
+                <img src="img/bolo5.jpg" alt="Imagem 1" class="carrossel-imagem">
+                <img src="img/bolo3.jpg" alt="Imagem 2" class="carrossel-imagem">
+                <img src="img/bolo2.jpg" alt="Imagem 3" class="carrossel-imagem">
+            </div>
+        </div>
+
+        <!-- Conteúdo da receita e avaliações à direita -->
+        <div class="conteudo">
+            <div class="container">
+                <h1>A Origem do Bolo de Chocolate</h1>
+                <p>
+                    O bolo de chocolate tem uma longa história, remontando ao século XVIII, 
+                    quando o cacau começou a ser amplamente utilizado na confeitaria europeia. 
+                    Com o tempo, a receita foi aprimorada, tornando-se um dos doces mais amados do mundo.
+                </p>
+                <button onclick="window.location.href='bolo.html'">Ver Receita</button>
+            </div>
+
+    
+    <div class="avaliacoes">
+        <h2>Deixe sua Opinião</h2>
+        <textarea id="comentario" placeholder="Escreva seu comentário..."></textarea>
+        <div class="estrelas">
+            <span class="estrela" data-value="1">★</span>
+            <span class="estrela" data-value="2">★</span>
+            <span class="estrela" data-value="3">★</span>
+            <span class="estrela" data-value="4">★</span>
+            <span class="estrela" data-value="5">★</span>
+        </div>
+        <button onclick="enviarAvaliacao()">Enviar Avaliação</button>
+    </div>
+    <button class="botao-voltar" onclick="voltarPagina()">Voltar</button>
+    <script src="mais.js"></script>
+</body>
+</html>

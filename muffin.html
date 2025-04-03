@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="geral.css">
+</head>
+
+
+
+<body>
+<!-- Cabeçalho -->
+<header class="header">
+    <a href="index.html">
+        <img src="img/logo.jpg" alt="Logo" class="logo">
+    </a>
+    
+    <!-- Barra de busca -->
+    <form class="search-form" onsubmit="return buscar(event)">
+        <input type="text" class="search-bar" id="searchInput" placeholder="Buscar receita...">
+        <button type="submit" class="btn-back">Buscar</button>
+    </form>
+    
+    <!-- Botão de voltar -->
+    <a href="receitas.html" class="btn-back">Voltar para Receitas</a>
+</header>
+
+
+
+            <!-- Carrossel de Imagens -->
+    <div class="carousel-container">
+        <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+        <div class="carousel">
+            <img class="carousel-image active" src="img/muffin1.jpg" alt="Muffin de Banana com Aveia 1">
+            <img class="carousel-image" src="img/muffin2.jpg" alt="Muffin de Banana com Aveia 2">
+            <img class="carousel-image" src="img/muffin3.jpg" alt="Muffin de Banana com Aveia 3">
+            <img class="carousel-image" src="img/muffin4.jpg" alt="Muffin de Banana com Aveia 4">
+            <img class="carousel-image" src="img/muffin5.jpg" alt="Muffin de Banana com Aveia 5">
+        </div>
+        <button class="next" onclick="changeSlide(1)">&#10095;</button>
+    </div>
+
+
+        <!-- Seção da receita -->
+        <div class="recipe-container">
+            <h1>Muffin de Banana e Aveia</h1>
+            <img src="img/muffin icone.png" alt="Muffin de banana e aveia" class="recipe-image">
+            <div class="time-box">
+                <p><strong>Tempo de preparo:</strong> 40-45 Minutos</p>
+            </div>
+            
+
+            <h1>Ingredientes:</h1>
+            <ul class="ingredients-list">
+                <li><img src="img/banana.jpeg" alt="Ícone"> 2 bananas maduras amassadas</li>
+                <li><img src="img/aveia.jpeg" alt="Ícone"> 1 xícara de aveia em flocos (pode usar aveia sem glúten se necessário)</li>
+                <li><img src="img/farinha de trigo.jpeg" alt="Ícone"> 1/2 xícara de farinha de trigo integral</li>
+                <li><img src="img/leite.jpeg" alt="Ícone"> 1/2 xícara de leite (pode usar leite vegetal, como leite de amêndoas)</li>
+                <li><img src="img/3 ovos.jpeg" alt="Ícone"> 1 ovo</li>
+                <li><img src="img/mascavo.jpeg" alt="Ícone"> 1/4 xícara de mel ou açúcar mascavo (a gosto)</li>
+                <li><img src="img/essencia de baunilha.jpeg" alt="Ícone"> 1 colher de chá de essência de baunilha</li>
+                <li><img src="img/canela em po.jpeg" alt="Ícone"> 1/2 colher de chá de canela em pó</li>
+                <li><img src="img/fermento em po.jpeg" alt="Ícone"> 1/2 colher de chá de fermento em pó</li>
+                <li><img src="img/bicarbonato.jpeg" alt="Ícone"> 1/4 colher de chá de bicarbonato de sódio</li>
+                <li><img src="img/sal.jpeg" alt="Ícone"> 1 pitada de sal</li>
+                <li><img src="img/nozes.jpeg" alt="Ícone"> 1/4 xícara de nozes ou castanhas picadas (opcional)</li>
+            </ul>
+
+            <div class="preparation-box">
+                <h1>Modo de Preparo</h1>
+                <ol>
+                    <li>Preaqueça o forno a 180°C e unte ou forre com forminhas de papel uma forma para muffin</li>
+                    <li>Em uma tigela, combine a aveia, a farinha de trigo integral, o fermento, o bicarbonato de sódio, a canela e o sal. Misture bem e reserve.</li>
+                    <li>Em outra tigela, amasse as bananas com um garfo até ficarem bem trituradas. Adicione o leite, o ovo, o mel (ou açúcar mascavo) e a essência de baunilha. Misture bem até formar uma massa homogênea.</li>
+                    <li>Junte os ingredientes secos à mistura úmida e mexa até incorporar. Se desejar, adicione as nozes ou castanhas picadas para um toque crocante.</li>
+                    <li>Distribua a massa nas forminhas de muffin, enchendo até 3/4 da capacidade de cada forminha.</li>
+                    <li>Asse os muffins por cerca de 25-30 minutos ou até que um palito inserido no centro saia limpo.</li>
+                    <li>Deixe esfriar por alguns minutos na forma, depois retire os muffins e coloque-os em uma grade para esfriar completamente.</li>
+                </ol>
+            </div>
+            
+            <!-- Novo quadrado de dicas -->
+<div class="recipe-tips">
+    <h3>Dicas adicionais:</h3>
+    <ul>
+        <li>Experimente substituir o mel por xarope de bordo para um sabor diferente.</li>
+        <li>Se não tiver nozes, use amêndoas ou castanhas-do-pará.</li>
+        <li>Adicione chips de chocolate para um toque mais doce.</li>
+        <li>Para uma versão vegana, substitua o ovo por uma mistura de sementes de linhaça e água.</li>
+    </ul>
+</div>
+        <script src="geral.js"></script>
+</body>
+</html>

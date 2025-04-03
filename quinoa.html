@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="geral.css">
+</head>
+
+
+
+<body>
+<!-- Cabeçalho -->
+<header class="header">
+    <a href="index.html">
+        <img src="img/logo.jpg" alt="Logo" class="logo">
+    </a>
+    
+    <!-- Barra de busca -->
+    <form class="search-form" onsubmit="return buscar(event)">
+        <input type="text" class="search-bar" id="searchInput" placeholder="Buscar receita...">
+        <button type="submit" class="btn-back">Buscar</button>
+    </form>
+    
+    <!-- Botão de voltar -->
+    <a href="receitas.html" class="btn-back">Voltar para Receitas</a>
+</header>
+
+
+
+            <!-- Carrossel de Imagens -->
+    <div class="carousel-container">
+        <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+        <div class="carousel">
+            <img class="carousel-image active" src="img/quinoa1.jpg" alt="Salada de Quinoa com Legumes 1">
+            <img class="carousel-image" src="img/quinoa2.jpg" alt="Salada de Quinoa com Legumes 2">
+            <img class="carousel-image" src="img/quinoa3.jpg" alt="Salada de Quinoa com Legumes 3">
+            <img class="carousel-image" src="img/quinoa4.jpg" alt="Salada de Quinoa com Legumes 4">
+            <img class="carousel-image" src="img/quinoa5.jpg" alt="Salada de Quinoa com Legumes 5">
+        </div>
+        <button class="next" onclick="changeSlide(1)">&#10095;</button>
+    </div>
+
+
+        <!-- Seção da receita -->   
+        <div class="recipe-container">
+            <h1>Salada de Quinoa com Legumes</h1>
+            <img src="img/salada quinoa icone.png" alt="Salada de Quinoa com Legumes" class="recipe-image">
+            <div class="time-box">
+                <p><strong>Tempo de preparo:</strong> 30 Minutos</p>
+            </div>
+            
+
+            <h1>Ingredientes:</h1>
+            <ul class="ingredients-list">
+                <li><img src="img/quinoa.jpeg" alt="Ícone">1 xícara (chá) de quinoa</li>
+                <li><img src="img/agua.jpeg" alt="Ícone">2 xícaras (chá) de água</li>
+                <li><img src="img/cenoura ralada.jpeg" alt="Ícone">1 cenoura ralada</li>
+                <li><img src="img/pimentao vermelho.jpeg" alt="Ícone">1/2 pimentão vermelho picado</li>
+                <li><img src="img/pimentao amarelo.jpeg" alt="Ícone">1/2 pimentão amarelo picado</li>
+                <li><img src="img/pepino.jpeg" alt="Ícone">1/2 pepino cortado em cubos pequenos</li>
+                <li><img src="img/tomate cereja.jpeg" alt="Ícone">1/2 xícara (chá) de tomate-cereja cortado ao meio</li>
+                <li><img src="img/manteiga derretida.jpeg" alt="Ícone">1/4 de cebola roxa picada</li>
+                <li><img src="img/azeite.jpeg" alt="Ícone">2 colheres (sopa) de azeite de oliva</li>
+                <li><img src="img/suco de limao.jpeg" alt="Ícone">Suco de 1 limão</li>
+                <li><img src="img/sal e pimenta.jpeg" alt="Ícone">Sal e pimenta-do-reino a gosto</li>
+                <li><img src="img/salsinhae cebolinha.jpeg" alt="Ícone">Salsinha e cebolinha picadas a gosto</li>
+            </ul>
+
+            <div class="preparation-box">
+                <h1>Modo de Preparo</h1>
+                <ol>
+                    <li>Lave a quinoa em água corrente e depois cozinhe com 2 xícaras de água por 15 minutos em fogo médio, até a água secar. Deixe esfriar.</li>
+                    <li>Enquanto a quinoa esfria, corte todos os legumes em pedaços pequenos.</li>
+                    <li>Em uma tigela grande, misture a quinoa cozida, os legumes picados, a cenoura ralada e a cebola roxa.</li>
+                    <li>Adicione o azeite de oliva, o suco de limão, o sal e a pimenta-do-reino. Mexa bem para incorporar os sabores.</li>
+                    <li>Acrescente a salsinha e a cebolinha picadas.</li>
+                    <li>Deixe na geladeira por alguns minutos para ficar ainda mais refrescante e aproveite!</li>
+                </ol>
+            </div>
+            
+            <!-- Novo quadrado de dicas -->
+<div class="recipe-tips">
+    <h3>Dicas adicionais:</h3>
+    <ul>
+        <li>Você pode adicionar grão-de-bico ou castanhas para um toque extra de proteína e crocância.</li>
+        <li>Troque os legumes de acordo com sua preferência, como abobrinha, rúcula ou brócolis.</li>
+        <li> Para um sabor especial, adicione queijo feta esfarelado ou nozes picadas.</li>
+    </ul>
+</div>
+<script src="geral.js"></script>
+</body>
+</html>

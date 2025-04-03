@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="geral.css">
+</head>
+
+
+
+<body>
+<!-- Cabeçalho -->
+<header class="header">
+    <a href="index.html">
+        <img src="img/logo.jpg" alt="Logo" class="logo">
+    </a>
+    
+    <!-- Barra de busca -->
+    <form class="search-form" onsubmit="return buscar(event)">
+        <input type="text" class="search-bar" id="searchInput" placeholder="Buscar receita...">
+        <button type="submit" class="btn-back">Buscar</button>
+    </form>
+    
+    <!-- Botão de voltar -->
+    <a href="receitas.html" class="btn-back">Voltar para Receitas</a>
+</header>
+
+
+
+            <!-- Carrossel de Imagens -->
+    <div class="carousel-container">
+        <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+        <div class="carousel">
+            <img class="carousel-image active" src="img/frango1.jpg" alt="Frango Grelhado 1">
+            <img class="carousel-image" src="img/frango2.jpg" alt="Frango Grelhado 2">
+            <img class="carousel-image" src="img/frango3.jpg" alt="Frango Grelhado 3">
+            <img class="carousel-image" src="img/frango4.jpg" alt="Frango Grelhado 4">
+            <img class="carousel-image" src="img/frango5.jpg" alt="Frango Grelhado 5">
+        </div>
+        <button class="next" onclick="changeSlide(1)">&#10095;</button>
+    </div>
+
+
+        <!-- Seção da receita -->
+        <div class="recipe-container">
+            <h1>Frango Grelhado com Limão e Alho</h1>
+            <img src="img/frango grelhado.png" alt="Frango Grelhado" class="recipe-image">
+            <div class="time-box">
+                <p><strong>Tempo de preparo:</strong> 30 minutos</p>
+            </div>
+            
+
+            <h1>Ingredientes:</h1>
+            <ul class="ingredients-list">
+                <li><img src="img/peito de frango.jpeg" alt="Ícone"> 2 peitos de frango (ou coxas desossadas)</li>
+                <li><img src="img/suco de limao.jpeg" alt="Ícone"> Suco de 1 limão</li>
+                <li><img src="img/alho.jpeg" alt="Ícone"> 3 dentes de alho picados</li>
+                <li><img src="img/azeite.jpeg" alt="Ícone"> 2 colheres de sopa de azeite de oliva</li>
+                <li><img src="img/oregano.jpeg" alt="Ícone"> 1 colher de chá de orégano (ou tomilho)</li>
+                <li><img src="img/sal e pimenta.jpeg" alt="Ícone"> Sal e pimenta a gosto</li>
+                <li><img src="img/paprica.jpeg" alt="Ícone"> 1/2 colher de chá de páprica (opcional, para dar cor)</li>
+                <li><img src="img/raspa de limao.jpeg" alt="Ícone"> Raspas de limão para finalizar.</li>
+            </ul>
+
+            <div class="preparation-box">
+                <h1>Modo de Preparo</h1>
+                <ol>
+                    <li>Em uma tigela, misture o suco de limão, o alho picado, o azeite, o orégano, o sal, a pimenta e a páprica.</li>
+                    <li>Coloque o frango na tigela e misture bem. Cubra e deixe marinar por pelo menos 30 minutos (ou até 4 horas na geladeira para mais sabor).</li>
+                    <li>Pré-aqueça uma grelha ou frigideira em fogo médio-alto e unte levemente com azeite.</li>
+                    <li>Coloque os pedaços de frango na grelha e cozinhe por cerca de 5-7 minutos de cada lado, até dourar bem e atingir 75°C internamente.</li>
+                    <li>Retire do fogo, deixe descansar por 2 minutos, polvilhe com raspas de limão e sirva com acompanhamentos.</li>
+                    <li>Sirva com arroz, legumes grelhados ou uma salada refrescante!</li>
+                </ol>
+            </div>
+            
+        <script src="geral.js"></script>
+</body>
+</html>

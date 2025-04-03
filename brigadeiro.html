@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="geral.css">
+</head>
+
+
+
+<body>
+<!-- Cabeçalho -->
+<header class="header">
+    <a href="index.html">
+        <img src="img/logo.jpg" alt="Logo" class="logo">
+    </a>
+    
+    <!-- Barra de busca -->
+    <form class="search-form" onsubmit="return buscar(event)">
+        <input type="text" class="search-bar" id="searchInput" placeholder="Buscar receita...">
+        <button type="submit" class="btn-back">Buscar</button>
+    </form>
+    
+    <!-- Botão de voltar -->
+    <a href="receitas.html" class="btn-back">Voltar para Receitas</a>
+</header>
+
+
+
+            <!-- Carrossel de Imagens -->
+    <div class="carousel-container">
+        <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+        <div class="carousel">
+            <img class="carousel-image active" src="img/brigadeiro1.jpg" alt="Brigadeiro 1">
+            <img class="carousel-image" src="img/brigadeiro2.jpg" alt=" Brigadeiro 2">
+            <img class="carousel-image" src="img/brigadeiro3.jpg" alt="Brigadeiro 3">
+            <img class="carousel-image" src="img/brigadeiro4.jpg" alt="Brigadeiro 4">
+            <img class="carousel-image" src="img/brigadeiro5.jpg" alt="Brigadeiro 5">
+        </div>
+        <button class="next" onclick="changeSlide(1)">&#10095;</button>
+    </div>
+
+
+        <!-- Seção da receita -->   
+        <div class="recipe-container">
+            <h1>Brigadeiro Caseiro</h1>
+            <img src="img/brigadeiro icone.png" alt="Brigadeiro Caseiro" class="recipe-image">
+            <div class="time-box">
+                <p><strong>Tempo de preparo:</strong> 15 Minutos</p>
+            </div>
+            
+
+            <h1>Ingredientes:</h1>
+            <ul class="ingredients-list">
+                <li><img src="img/leite condensado.jpeg" alt="Ícone">1 lata (395g) de leite condensado</li>
+                <li><img src="img/chocolate em po.jpeg" alt="Ícone">2 colheres (sopa) de chocolate em pó ou achocolatado</li>
+                <li><img src="img/manteiga.jpeg" alt="Ícone">1 colher (sopa) de manteiga</li>
+                <li><img src="img/granulado.jpeg" alt="Ícone">Chocolate granulado para decorar</li>
+            </ul>
+
+            <div class="preparation-box">
+                <h1>Modo de Preparo</h1>
+                <ol>
+                    <li>Em uma panela, misture o leite condensado, o chocolate em pó e a manteiga.</li>
+                    <li>Leve ao fogo médio, mexendo sem parar para evitar que grude no fundo.</li>
+                    <li>Cozinhe até que a mistura desgrude do fundo da panela (cerca de 10 minutos).</li>
+                    <li>Despeje o brigadeiro em um prato untado com manteiga e deixe esfriar.</li>
+                    <li> Com as mãos untadas, modele bolinhas e passe no chocolate granulado.</li>
+                    <li>Sirva em forminhas ou coma direto da colher!</li>
+                </ol>
+            </div>
+            
+            <!-- Novo quadrado de dicas -->
+<div class="recipe-tips">
+    <h3>Dicas adicionais:</h3>
+    <ul>
+        <li>Se quiser um brigadeiro mais cremoso para comer de colher, retire do fogo um pouco antes.</li>
+        <li>Para um sabor mais intenso, use chocolate meio amargo derretido no lugar do chocolate em pó.</li>
+        <li> Pode substituir o granulado por coco ralado, castanhas trituradas ou confeitos coloridos.</li>
+    </ul>
+</div>
+<script src="geral.js"></script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="geral.css">
+</head>
+
+
+
+<body>
+<!-- Cabeçalho -->
+<header class="header">
+    <a href="index.html">
+        <img src="img/logo.jpg" alt="Logo" class="logo">
+    </a>
+    
+    <!-- Barra de busca -->
+    <form class="search-form" onsubmit="return buscar(event)">
+        <input type="text" class="search-bar" id="searchInput" placeholder="Buscar receita...">
+        <button type="submit" class="btn-back">Buscar</button>
+    </form>
+    
+    <!-- Botão de voltar -->
+    <a href="receitas.html" class="btn-back">Voltar para Receitas</a>
+</header>
+
+
+
+            <!-- Carrossel de Imagens -->
+    <div class="carousel-container">
+        <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+        <div class="carousel">
+            <img class="carousel-image active" src="img/sovete morango1.jpg" alt="Sorvete de Morango Caseiro 1">
+            <img class="carousel-image" src="img/sovete morango2.jpg" alt="Sorvete de Morango Caseiro 2">
+            <img class="carousel-image" src="img/sovete morango3.jpg" alt="Sorvete de Morango Caseiro 3">
+            <img class="carousel-image" src="img/sovete morango4.jpg" alt="Sorvete de Morango Caseiro 4">
+            <img class="carousel-image" src="img/sovete morango5.jpg" alt="Sorvete de Morango Caseiro 5">
+        </div>
+        <button class="next" onclick="changeSlide(1)">&#10095;</button>
+    </div>
+
+
+        <!-- Seção da receita -->   
+        <div class="recipe-container">
+            <h1>Sorvete de Morango Caseiro</h1>
+            <img src="img/sorvete morando icone.png" alt="Sorvete de Morango Caseiro" class="recipe-image">
+            <div class="time-box">
+                <p><strong>Tempo de preparo:</strong> 6 Horas</p>
+            </div>
+            
+
+            <h1>Ingredientes:</h1>
+            <ul class="ingredients-list">
+                <li><img src="img/morangos.jpeg" alt="Ícone">2 xícaras (chá) de morangos frescos lavados e picados</li>
+                <li><img src="img/leite condensado.jpeg" alt="Ícone">1 lata (395g) de leite condensado</li>
+                <li><img src="img/creme de leite.jpeg" alt="Ícone">1 caixa (200g) de creme de leite</li>
+                <li><img src="img/suco de limao.jpeg" alt="Ícone">Suco de meio limão (opcional, realça o sabor)</li>
+                <li><img src="img/essencia de baunilha.jpeg" alt="Ícone">1 colher (chá) de essência de baunilha (opcional)</li>
+            </ul>
+
+            <div class="preparation-box">
+                <h1>Modo de Preparo</h1>
+                <ol>
+                    <li>No liquidificador, bata os morangos com o leite condensado, o creme de leite, o suco de limão e a baunilha até obter um creme homogêneo.</li>
+                    <li>Despeje a mistura em um recipiente e leve ao freezer por 2 horas.</li>
+                    <li>Retire do freezer e bata a mistura na batedeira para quebrar os cristais de gelo. Isso deixará o sorvete mais cremoso.</li>
+                    <li>Leve ao freezer por mais 4 horas até firmar.</li>
+                    <li>Retire alguns minutos antes de servir para que fique mais cremoso.</li>
+                </ol>
+            </div>
+            
+            <!-- Novo quadrado de dicas -->
+<div class="recipe-tips">
+    <h3>Dicas adicionais:</h3>
+    <ul>
+        <li> Se quiser um sorvete ainda mais cremoso, bata a mistura mais uma vez antes da etapa final de congelamento.</li>
+        <li>Pode adicionar pedacinhos de morango para deixar o sorvete mais rústico.</li>
+        <li> Substitua o leite condensado por iogurte natural e mel para uma versão mais saudável.</li>
+    </ul>
+</div>
+<script src="geral.js"></script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="geral.css">
+</head>
+
+
+
+<body>
+<!-- Cabeçalho -->
+<header class="header">
+    <a href="index.html">
+        <img src="img/logo.jpg" alt="Logo" class="logo">
+    </a>
+    
+    <!-- Barra de busca -->
+    <form class="search-form" onsubmit="return buscar(event)">
+        <input type="text" class="search-bar" id="searchInput" placeholder="Buscar receita...">
+        <button type="submit" class="btn-back">Buscar</button>
+    </form>
+    
+    <!-- Botão de voltar -->
+    <a href="receitas.html" class="btn-back">Voltar para Receitas</a>
+</header>
+
+
+
+            <!-- Carrossel de Imagens -->
+    <div class="carousel-container">
+        <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+        <div class="carousel">
+            <img class="carousel-image active" src="img/panqueca1.jpg" alt="Panquecas Americanas 1">
+            <img class="carousel-image" src="img/panqueca2.jpg" alt="Panquecas Americanas 2">
+            <img class="carousel-image" src="img/panqueca3.jpg" alt="Panquecas Americanas 3">
+            <img class="carousel-image" src="img/panqueca4.jpg" alt="Panquecas Americanas 4">
+            <img class="carousel-image" src="img/panqueca5.jpg" alt="Panquecas Americanas 5">
+        </div>
+        <button class="next" onclick="changeSlide(1)">&#10095;</button>
+    </div>
+
+
+        <!-- Seção da receita -->   
+        <div class="recipe-container">
+            <h1>Panquecas Americanas</h1>
+            <img src="img/panqueca icone.png" alt="Muffin de banana e aveia" class="recipe-image">
+            <div class="time-box">
+                <p><strong>Tempo de preparo:</strong> 20 Minutos</p>
+            </div>
+            
+
+            <h1>Ingredientes:</h1>
+            <ul class="ingredients-list">
+                <li><img src="img/farinha de trigo.jpeg" alt="Ícone"> 1 xícara (chá) de farinha de trigo</li>
+                <li><img src="img/açucar.jpeg" alt="Ícone"> 2 colheres (sopa) de açúcar</li>
+                <li><img src="img/fermento em po.jpeg" alt="Ícone"> 1 colher (chá) de fermento em pó</li>
+                <li><img src="img/sal.jpeg" alt="Ícone"> 1 pitada de sal</li>
+                <li><img src="img/leite.jpeg" alt="Ícone"> 3/4 de xícara (chá) de leite</li>
+                <li><img src="img/3 ovos.jpeg" alt="Ícone"> 1 ovo</li>
+                <li><img src="img/essencia de baunilha.jpeg" alt="Ícone"> 1 colher (chá) de essência de baunilha (opcional)</li>
+                <li><img src="img/manteiga derretida.jpeg" alt="Ícone"> 1 colher (sopa) de manteiga derretida</li>
+            </ul>
+
+            <div class="preparation-box">
+                <h1>Modo de Preparo</h1>
+                <ol>
+                    <li> Em uma tigela, misture a farinha, o açúcar, o fermento e o sal.</li>
+                    <li>Em outro recipiente, bata o ovo, adicione o leite, a essência de baunilha e a manteiga derretida.</li>
+                    <li>Misture os ingredientes líquidos aos secos e mexa até formar uma massa homogênea (não precisa bater muito).</li>
+                    <li>Aqueça uma frigideira antiaderente em fogo médio e unte levemente com manteiga.</li>
+                    <li>Despeje uma porção de massa na frigideira (cerca de 1/4 de xícara por panqueca).</li>
+                    <li>Cozinhe até que bolhas se formem na superfície e as bordas fiquem secas, depois vire e doure o outro lado.</li>
+                    <li>Sirva com mel, frutas, manteiga ou o que preferir!</li>
+                </ol>
+            </div>
+            
+            <!-- Novo quadrado de dicas -->
+<div class="recipe-tips">
+    <h3>Dicas adicionais:</h3>
+    <ul>
+        <li>Para panquecas mais fofinhas, não mexa demais a massa.</li>
+        <li>Adicione gotas de chocolate ou pedaços de banana à massa para um toque especial.</li>
+        <li>Sirva com xarope de bordo, mel ou geleia para um sabor ainda melhor!</li>
+    </ul>
+</div>
+<script src="geral.js"></script>
+</body>
+</html>

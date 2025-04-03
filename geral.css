@@ -1,0 +1,225 @@
+/* Cabeçalho */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #f0c040;
+}
+
+/* Logo */
+.logo {
+    width: 120px;
+    border-radius: 20px;
+}
+/* Seleciona a logo */
+.logo {
+    transition: transform 0.3s ease-in-out; /* Adiciona uma transição suave */
+}
+
+/* Aplica o zoom quando o cursor passa sobre a logo */
+.logo:hover {
+    transform: scale(1.1); /* Aumenta a escala da logo para 110% */
+}
+
+
+/* Barra de busca */
+.search-bar {
+    flex: 1;
+    max-width: 300px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Botão de buscar */
+.search-form button {
+    background-color: #d9534f;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.search-form button:hover {
+    background-color: #c9302c;
+}
+
+/* Botão de voltar */
+.btn-back {
+    text-decoration: none;
+    background-color: #d9534f;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn-back:hover {
+    background-color: #c9302c;
+}
+
+
+
+/* Estilização da Receita */
+.recipe-container {
+    text-align: center;
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+.recipe-image {
+    width: 20%;
+    max-width: 400px;
+    border-radius: 10px;
+}
+/* Estilo da lista de ingredientes */
+/* Ajuste para alinhar os ingredientes à esquerda */
+.ingredients-list {
+    list-style: none;
+    padding-left: 0;
+    margin-left: 135px; /* Move a lista para a esquerda */
+    text-align: left;
+}
+
+.ingredients-list li {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+/* Estilo dos ícones */
+.ingredients-list img {
+    width: 70px; /* Tamanho do ícone */
+    height: 70px;
+    margin-right: 10px;
+    border-radius: 50px;
+}
+
+
+
+
+/* Caixa para o tempo de preparo */
+.time-box {
+    background-color: #f0c040; /* Cor de fundo suave */
+    padding: 5px 15px;
+    border-radius: 10px; /* Bordas arredondadas */
+    font-size: 17px;
+    font-weight: bold;
+    color: #000000; /* Cor do texto */
+    margin-bottom: 15px;
+}
+/* Carrossel de Imagens */
+.carousel-container {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    margin: 20px auto;
+    overflow: hidden;
+    text-align: center;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-image {
+    width: 100%;
+    display: none;
+    border-radius: 10px;
+}
+
+/* Ativar imagem atual */
+.carousel-image.active {
+    display: block;
+}
+
+/* Botões do Carrossel */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s;
+}
+
+/* Ajuste da seta esquerda */
+.prev {
+    left: 15px;
+}
+
+/* Ajuste da seta direita */
+.next {
+    right: 15px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+
+
+/* Box do modo de preparo */
+.preparation-box {
+    background-color: #f0c040; /* Fundo leve e neutro */
+    padding: 50px;
+    border-radius: 20px; /* Bordas arredondadas suaves */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    font-size: 20px;
+    margin-top: 20px;
+    text-align: left; /* Alinha todo o texto para a esquerda */
+}
+/* Ajuste para mover apenas o título "Modo de Preparo" para a esquerda */
+.preparation-box h1 {
+
+    text-align: center; /* Garante alinhamento à esquerda */
+}
+
+/* Lista do modo de preparo */
+.preparation-box ol {
+    padding-left: 50px; /* Espaço à esquerda para a numeração */
+}
+
+.preparation-box li {
+    margin-bottom: 40px;
+
+}
+.recipe-tips {
+    background-color: #d9534f;  /* Fundo suave */
+    padding: 30px;              /* Espaçamento interno */
+    margin-top: 20px;           /* Distância do conteúdo acima */
+    border-radius: 20px;         /* Bordas arredondadas */
+}
+
+.recipe-tips h3 {
+    font-size: 2.5em;           /* Tamanho maior para o título */
+    color: #ffffff;                /* Cor escura para o título */
+}
+
+.recipe-tips ul {
+    list-style-type: disc;      /* Remove as bolinhas da lista */
+    list-style-position:inside; /* Coloca as bolinhas dentro do conteúdo, alinhadas ao texto */
+
+    padding-left: 0;            /* Remove o espaçamento à esquerda */
+}
+
+.recipe-tips ul li {
+    font-size: 1.3em;             /* Tamanho de fonte padrão */
+    color: #ffffff;                /* Cor para o texto */
+    margin-bottom: 30px;        /* Espaço entre os itens */
+}

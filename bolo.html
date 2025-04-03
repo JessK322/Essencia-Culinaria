@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="geral.css">
+</head>
+
+
+
+<body>
+<!-- Cabeçalho -->
+<header class="header">
+    <a href="index.html">
+        <img src="img/logo.jpg" alt="Logo" class="logo">
+    </a>
+    
+    <!-- Barra de busca -->
+    <form class="search-form" onsubmit="return buscar(event)">
+        <input type="text" class="search-bar" id="searchInput" placeholder="Buscar receita...">
+        <button type="submit" class="btn-back">Buscar</button>
+    </form>
+    
+    <!-- Botão de voltar -->
+    <a href="receitas.html" class="btn-back">Voltar para Receitas</a>
+</header>
+
+
+
+            <!-- Carrossel de Imagens -->
+    <div class="carousel-container">
+        <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+        <div class="carousel">
+            <img class="carousel-image active" src="img/bolo1.jpg" alt="Bolo de Chocolate 1">
+            <img class="carousel-image" src="img/bolo2.jpg" alt="Bolo de Chocolate 2">
+            <img class="carousel-image" src="img/bolo3.jpg" alt="Bolo de Chocolate 3">
+            <img class="carousel-image" src="img/bolo4.jpg" alt="Bolo de Chocolate 4">
+            <img class="carousel-image" src="img/bolo5.jpg" alt="Bolo de Chocolate 5">
+        </div>
+        <button class="next" onclick="changeSlide(1)">&#10095;</button>
+    </div>
+
+
+        <!-- Seção da receita -->
+        <div class="recipe-container">
+            <h1>Bolo de Chocolate Simples</h1>
+            <img src="img/bolo-icone.png" alt="Bolo de Chocolate" class="recipe-image">
+            <div class="time-box">
+                <p><strong>Tempo de preparo:</strong> 40 minutos</p>
+            </div>
+            
+
+            <h1>Ingredientes:</h1>
+            <ul class="ingredients-list">
+                <li><img src="img/farinha de trigo.jpeg" alt="Ícone"> 2 xícaras de farinha de trigo</li>
+                <li><img src="img/açucar.jpeg" alt="Ícone"> 1 xícara de açúcar</li>
+                <li><img src="img/3 ovos.jpeg" alt="Ícone"> 3 ovos</li>
+                <li><img src="img/leite.jpeg" alt="Ícone"> 1 xícara de leite</li>
+                <li><img src="img/oleo.jpeg" alt="Ícone"> 1/2 xícara de óleo</li>
+                <li><img src="img/fermento em po.jpeg" alt="Ícone"> 1 colher de sopa de fermento</li>
+                <li><img src="img/chocolate em po.jpeg" alt="Ícone"> 1 xícara de chocolate em pó</li>
+            </ul>
+
+            <div class="preparation-box">
+                <h1>Modo de Preparo</h1>
+                <ol>
+                    <li>Pré-aqueça o forno a 180°C.</li>
+                    <li>Em uma tigela, misture a farinha, o açúcar e o chocolate em pó.</li>
+                    <li>Adicione os ovos, o leite e o óleo, misturando bem até obter uma massa homogênea.</li>
+                    <li>Por último, acrescente o fermento e misture suavemente.</li>
+                    <li>Despeje a massa em uma forma untada e leve ao forno por cerca de 40 minutos.</li>
+                    <li>Retire do forno, deixe esfriar e sirva!</li>
+                </ol>
+            </div>
+        <script src="geral.js"></script>
+</body>
+</html>

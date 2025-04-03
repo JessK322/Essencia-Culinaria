@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="geral.css">
+</head>
+
+
+
+<body>
+<!-- Cabeçalho -->
+<header class="header">
+    <a href="index.html">
+        <img src="img/logo.jpg" alt="Logo" class="logo">
+    </a>
+    
+    <!-- Barra de busca -->
+    <form class="search-form" onsubmit="return buscar(event)">
+        <input type="text" class="search-bar" id="searchInput" placeholder="Buscar receita...">
+        <button type="submit" class="btn-back">Buscar</button>
+    </form>
+    
+    <!-- Botão de voltar -->
+    <a href="receitas.html" class="btn-back">Voltar para Receitas</a>
+</header>
+
+
+
+            <!-- Carrossel de Imagens -->
+    <div class="carousel-container">
+        <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+        <div class="carousel">
+            <img class="carousel-image active" src="img/batata rosti1.jpg" alt="Batata Rosti 1">
+            <img class="carousel-image" src="img/batata rosti2.jpg" alt="Batata Rosti 2">
+            <img class="carousel-image" src="img/batata rosti3.jpg" alt="Batata Rosti 3">
+            <img class="carousel-image" src="img/batata rosti4.jpg" alt="Batata Rosti 4">
+            <img class="carousel-image" src="img/batata rosti5.jpg" alt="Batata Rosti 5">
+        </div>
+        <button class="next" onclick="changeSlide(1)">&#10095;</button>
+    </div>
+
+
+        <!-- Seção da receita -->   
+        <div class="recipe-container">
+            <h1>Batata Rosti</h1>
+            <img src="img/batata rosti icone.png" alt="Batata Rosti" class="recipe-image">
+            <div class="time-box">
+                <p><strong>Tempo de preparo:</strong> 30 Minutos</p>
+            </div>
+            
+
+            <h1>Ingredientes:</h1>
+            <ul class="ingredients-list">
+                <li><img src="img/batata normal.jpeg" alt="Ícone">2 batatas grandes</li>
+                <li><img src="img/manteiga derretida.jpeg" alt="Ícone">1 colher (sopa) de manteiga ou azeite</li>
+                <li><img src="img/sal e pimenta.jpeg" alt="Ícone">Sal e pimenta-do-reino a gosto</li>
+                <li><img src="img/recheio queijo presunto cogumelo.jpeg" alt="Ícone">Recheio opcional: queijo, presunto, frango desfiado ou cogumelos</li>
+            </ul>
+
+            <div class="preparation-box">
+                <h1>Modo de Preparo</h1>
+                <ol>
+                    <li>Lave bem as batatas e cozinhe em água fervente por 5 minutos. Não deixe cozinhar demais, pois elas ainda precisam estar firmes.</li>
+                    <li>Após esfriar um pouco, descasque e rale as batatas no ralo grosso. Tempere com sal e pimenta.</li>
+                    <li>Aqueça uma frigideira com manteiga ou azeite.</li>
+                    <li>Coloque metade da batata ralada e espalhe bem.</li>
+                    <li>Se for usar recheio, adicione agora e cubra com o restante da batata ralada.</li>
+                    <li>Deixe dourar em fogo médio por 5 a 7 minutos. Depois, vire com cuidado e doure o outro lado por mais 5 minutos.</li>
+                    <li>Retire do fogo e sirva quente!</li>
+                </ol>
+            </div>
+            
+            <!-- Novo quadrado de dicas -->
+<div class="recipe-tips">
+    <h3>Dicas adicionais:</h3>
+    <ul>
+        <li>Para um sabor especial, adicione ervas como orégano ou alecrim.</li>
+        <li>Use uma frigideira antiaderente para facilitar na hora de virar.</li>
+        <li>Se quiser uma versão mais leve, asse no forno a 200°C por 25 minutos.</li>
+    </ul>
+</div>
+<script src="geral.js"></script>
+</body>
+</html>

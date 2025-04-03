@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="geral.css">
+</head>
+
+
+
+<body>
+<!-- Cabeçalho -->
+<header class="header">
+    <a href="index.html">
+        <img src="img/logo.jpg" alt="Logo" class="logo">
+    </a>
+    
+    <!-- Barra de busca -->
+    <form class="search-form" onsubmit="return buscar(event)">
+        <input type="text" class="search-bar" id="searchInput" placeholder="Buscar receita...">
+        <button type="submit" class="btn-back">Buscar</button>
+    </form>
+    
+    <!-- Botão de voltar -->
+    <a href="receitas.html" class="btn-back">Voltar para Receitas</a>
+</header>
+
+
+
+            <!-- Carrossel de Imagens -->
+    <div class="carousel-container">
+        <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+        <div class="carousel">
+            <img class="carousel-image active" src="img/caneca1.jpg" alt="Bolo de Caneca de Chocolate 1">
+            <img class="carousel-image" src="img/caneca2.jpg" alt="Bolo de Caneca de Chocolate 2">
+            <img class="carousel-image" src="img/caenca3.jpg" alt="Bolo de Caneca de Chocolate 3">
+            <img class="carousel-image" src="img/caneca4.jpg" alt="Bolo de Caneca de Chocolate 4">
+            <img class="carousel-image" src="img/caneca5.jpg" alt="Bolo de Caneca de Chocolate 5">
+        </div>
+        <button class="next" onclick="changeSlide(1)">&#10095;</button>
+    </div>
+
+
+        <!-- Seção da receita -->
+        <div class="recipe-container">
+            <h1>Bolo de Caneca de Chocolate</h1>
+            <img src="img/caneca icone.png" alt="Muffin de banana e aveia" class="recipe-image">
+            <div class="time-box">
+                <p><strong>Tempo de preparo:</strong> 5 Minutos</p>
+            </div>
+            
+
+            <h1>Ingredientes:</h1>
+            <ul class="ingredients-list">
+                <li><img src="img/farinha de trigo.jpeg" alt="Ícone"> 4 colheres (sopa) de farinha de trigo</li>
+                <li><img src="img/açucar.jpeg" alt="Ícone"> 4 colheres (sopa) de açúcar</li>
+                <li><img src="img/chocolate em po.jpeg" alt="Ícone"> 2 colheres (sopa) de chocolate em pó</li>
+                <li><img src="img/fermento em po.jpeg" alt="Ícone"> 1/4 de colher (chá) de fermento em pó</li>
+                <li><img src="img/leite.jpeg" alt="Ícone"> 3 colheres (sopa) de leite</li>
+                <li><img src="img/oleo.jpeg" alt="Ícone"> 3 colheres (sopa) de óleo</li>
+                <li><img src="img/3 ovos.jpeg" alt="Ícone"> 1 ovo</li>
+            </ul>
+
+            <div class="preparation-box">
+                <h1>Modo de Preparo</h1>
+                <ol>
+                    <li>Em uma caneca grande (mínimo 300 ml), misture a farinha, o açúcar, o chocolate em pó e o fermento.</li>
+                    <li>Adicione o leite, o óleo e o ovo, misturando bem até formar uma massa homogênea.</li>
+                    <li> Leve ao micro-ondas em potência alta por aproximadamente 3 minutos.</li>
+                    <li>Espere esfriar um pouco e aproveite!</li>
+                </ol>
+            </div>
+            
+            <!-- Novo quadrado de dicas -->
+<div class="recipe-tips">
+    <h3>Dicas adicionais:</h3>
+    <ul>
+        <li> Se quiser um bolo mais fofinho, peneire a farinha e o chocolate antes de misturar.</li>
+        <li> Adicione pedaços de chocolate para um efeito derretido no meio.</li>
+        <li>Finalize com cobertura de brigadeiro ou leite condensado para um toque especial.</li>
+    </ul>
+</div>
+<script src="geral.js"></script>
+</body>
+</html>

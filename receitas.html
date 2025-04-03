@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RECEITAS-Essencia Culinaria</title>
+    <link rel="stylesheet" href="receitas.css">
+    <script src="geral.js" defer></script> <!-- Certifique-se de que o JavaScript está sendo carregado -->
+
+</head>
+<body>
+
+    <a href="index.html">
+        <img src="img/logo.jpg" alt="Logo" class="logo">
+      </a>
+
+
+      <form onsubmit="buscar(event)">
+        <input type="text" id="searchInput" placeholder="Buscar receita...">
+        <button type="submit">Buscar</button>
+    </form>
+
+
+          <!-- Título "RECEITAS" logo abaixo da logo -->
+    <h1 class="recipes-title">RECEITAS DISPONÍVEIS</h1> <!-- Adicionando o h1 aqui -->
+    <div class="container">
+        <div class="box" onclick="location.href='bolo.html'">
+            <img src="img/bolo de chocolate.jpeg" alt="Receita 1">
+            <div class="recipe-name">Bolo De Chocolate Simples</div>
+            <div class="time-posted">Postado há 2 meses</div>
+        </div>
+        <div class="box" onclick="location.href='frango.html'">
+            <img src="img/frango.jpeg" alt="Receita 2">
+            <div class="recipe-name"> Frango Grelhado com Limão e Alho</div>
+            <div class="time-posted">Postado há 5 dias</div>
+        </div>
+        <div class="box" onclick="location.href='muffin.html'">
+            <img src="img/muffin.jpeg" alt="Receita 3">
+            <div class="recipe-name">Muffin de Banana e Aveia</div>
+            <div class="time-posted">Postado há 1 semana</div>
+        </div>
+        <div class="box" onclick="location.href='caneca.html'">
+            <img src="img/caneca.jpeg" alt="Receita 4">
+            <div class="recipe-name">Bolo de Caneca de Chocolate</div>
+            <div class="time-posted">Postado há 10 dias</div>
+        </div>
+        <div class="box" onclick="location.href='panqueca.html'">
+            <img src="img/panqueca.jpeg" alt="Receita 5">
+            <div class="recipe-name">Panquecas Americanas</div>
+            <div class="time-posted">Postado há 2 semanas</div>
+        </div>
+        <div class="box" onclick="location.href='brigadeiro.html'">
+            <img src="img/brigadeiro.jpeg" alt="Receita 6">
+            <div class="recipe-name"> Brigadeiro</div>
+            <div class="time-posted">Postado há 3 dias</div>
+        </div>
+        <div class="box" onclick="location.href='sanduiche-natural.html'">
+            <img src="img/sanduiche.jpeg" alt="Receita 7">
+            <div class="recipe-name"> Sanduiche Natural de Frango</div>
+            <div class="time-posted">Postado há 4 dias</div>
+        </div>
+        <div class="box" onclick="location.href='quinoa.html'">
+            <img src="img/salada.jpeg" alt="Receita 8">
+            <div class="recipe-name">Salada de Quinoa com Legumes</div>
+            <div class="time-posted">Postado há 6 dias</div>
+        </div>
+        <div class="box" onclick="location.href='sorvete-morango.html'">
+            <img src="img/sorvete.jpeg" alt="Receita 9">
+            <div class="recipe-name"> Sorvete de Morango Caseiro</div>
+            <div class="time-posted">Postado há 9 dias</div>
+        </div>
+        <div class="box" onclick="location.href='batata-Rosti.html'">
+            <img src="img/batata.jpeg" alt="Receita 10">
+            <div class="recipe-name">Batata Rosti</div>
+            <div class="time-posted">Postado há 12 dias</div>
+        </div>
+    </div>
+</body>
+</html>

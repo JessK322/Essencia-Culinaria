@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="geral.css">
+</head>
+
+
+
+<body>
+<!-- Cabeçalho -->
+<header class="header">
+    <a href="index.html">
+        <img src="img/logo.jpg" alt="Logo" class="logo">
+    </a>
+    
+    <!-- Barra de busca -->
+    <form class="search-form" onsubmit="return buscar(event)">
+        <input type="text" class="search-bar" id="searchInput" placeholder="Buscar receita...">
+        <button type="submit" class="btn-back">Buscar</button>
+    </form>
+    
+    <!-- Botão de voltar -->
+    <a href="receitas.html" class="btn-back">Voltar para Receitas</a>
+</header>
+
+
+
+            <!-- Carrossel de Imagens -->
+    <div class="carousel-container">
+        <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+        <div class="carousel">
+            <img class="carousel-image active" src="img/sanduiche1.jpg" alt="Sanduiche Natural de Frango 1">
+            <img class="carousel-image" src="img/sanduiche2.jpg" alt="Sanduiche Natural de Frango 2">
+            <img class="carousel-image" src="img/sanduiche3.jpg" alt="Sanduiche Natural de Frango 3">
+            <img class="carousel-image" src="img/sanduiche4.jpg" alt="Sanduiche Natural de Frango 4">
+            <img class="carousel-image" src="img/sanduiche5.jpg" alt="Sanduiche Natural de Frango 5">
+        </div>
+        <button class="next" onclick="changeSlide(1)">&#10095;</button>
+    </div>
+
+
+        <!-- Seção da receita -->   
+        <div class="recipe-container">
+            <h1>Sanduiche Natural de Frango</h1>
+            <img src="img/sanduiche icone.png" alt="Sanduiche Natural de Frango" class="recipe-image">
+            <div class="time-box">
+                <p><strong>Tempo de preparo:</strong> 20 Minutos</p>
+            </div>
+            
+
+            <h1>Ingredientes:</h1>
+            <ul class="ingredients-list">
+                <li><img src="img/frnago desfiado.jpeg" alt="Ícone">1 peito de frango cozido e desfiado</li>
+                <li><img src="img/maiosense ou iogurte natural.jpeg" alt="Ícone">3 colheres (sopa) de maionese ou iogurte natural</li>
+                <li><img src="img/cenoura ralada.jpeg" alt="Ícone">1 cenoura ralada</li>
+                <li><img src="img/milho.jpeg" alt="Ícone">1/2 lata de milho verde</li>
+                <li><img src="img/ervilha.jpeg" alt="Ícone">1/2 lata de ervilha (opcional)</li>
+                <li><img src="img/salsicha picada.jpeg" alt="Ícone">1 colher (sopa) de salsinha picada</li>
+                <li><img src="img/sal e pimenta.jpeg" alt="Ícone">Sal e pimenta-do-reino a gosto</li>
+                <li><img src="img/suco de limao.jpeg" alt="Ícone">Suco de meio limão (opcional, para dar mais sabor)</li>
+                <li><img src="img/pao de forma ou integral.jpeg" alt="Ícone">6 fatias de pão integral ou pão de forma</li>
+                <li><img src="img/alface e tomate.jpeg" alt="Ícone">Folhas de alface e fatias de tomate para montar o sanduíche</li>
+            </ul>
+
+            <div class="preparation-box">
+                <h1>Modo de Preparo</h1>
+                <ol>
+                    <li>Cozinhe o peito de frango em água com sal e desfie bem.</li>
+                    <li>Em uma tigela, misture o frango desfiado, a maionese (ou iogurte), a cenoura ralada, o milho, a ervilha e a salsinha.</li>
+                    <li>Tempere com sal, pimenta e suco de limão a gosto. Mexa bem até formar um patê cremoso.</li>
+                    <li>Pegue uma fatia de pão, coloque uma folha de alface e uma fatia de tomate.</li>
+                    <li>Espalhe uma camada do recheio de frango e feche com outra fatia de pão.</li>
+                    <li> Corte ao meio e aproveite!</li>
+                </ol>
+            </div>
+            
+            <!-- Novo quadrado de dicas -->
+<div class="recipe-tips">
+    <h3>Dicas adicionais:</h3>
+    <ul>
+        <li>Se quiser um sanduíche ainda mais saudável, use pão integral ou pão sírio</li>
+        <li>Para um toque especial, acrescente queijo cottage ou requeijão no recheio.</li>
+        <li>Pode substituir a maionese por creme de ricota para um recheio mais leve.</li>
+    </ul>
+</div>
+<script src="geral.js"></script>
+</body>
+</html>
